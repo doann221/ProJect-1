@@ -1,0 +1,17 @@
+D:\Temp\LoginDemo\Project-1\ProJect-1\BL\bin\Debug\net5.0\BL.deps.json
+D:\Temp\LoginDemo\Project-1\ProJect-1\BL\bin\Debug\net5.0\BL.dll
+D:\Temp\LoginDemo\Project-1\ProJect-1\BL\bin\Debug\net5.0\ref\BL.dll
+D:\Temp\LoginDemo\Project-1\ProJect-1\BL\bin\Debug\net5.0\BL.pdb
+D:\Temp\LoginDemo\Project-1\ProJect-1\BL\bin\Debug\net5.0\DAL.dll
+D:\Temp\LoginDemo\Project-1\ProJect-1\BL\bin\Debug\net5.0\Persistance.dll
+D:\Temp\LoginDemo\Project-1\ProJect-1\BL\bin\Debug\net5.0\Persistance.pdb
+D:\Temp\LoginDemo\Project-1\ProJect-1\BL\bin\Debug\net5.0\DAL.pdb
+D:\Temp\LoginDemo\Project-1\ProJect-1\BL\obj\Debug\net5.0\BL.csprojAssemblyReference.cache
+D:\Temp\LoginDemo\Project-1\ProJect-1\BL\obj\Debug\net5.0\BL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Temp\LoginDemo\Project-1\ProJect-1\BL\obj\Debug\net5.0\BL.AssemblyInfoInputs.cache
+D:\Temp\LoginDemo\Project-1\ProJect-1\BL\obj\Debug\net5.0\BL.AssemblyInfo.cs
+D:\Temp\LoginDemo\Project-1\ProJect-1\BL\obj\Debug\net5.0\BL.csproj.CoreCompileInputs.cache
+D:\Temp\LoginDemo\Project-1\ProJect-1\BL\obj\Debug\net5.0\BL.csproj.CopyComplete
+D:\Temp\LoginDemo\Project-1\ProJect-1\BL\obj\Debug\net5.0\BL.dll
+D:\Temp\LoginDemo\Project-1\ProJect-1\BL\obj\Debug\net5.0\ref\BL.dll
+D:\Temp\LoginDemo\Project-1\ProJect-1\BL\obj\Debug\net5.0\BL.pdb

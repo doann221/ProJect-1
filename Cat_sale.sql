@@ -55,17 +55,9 @@ cat_longevely int
  constraint fk_InvoiceDetail_Cat foreign key (cat_id) references Cat(cat_id)
  );
  
- insert into Customer( customer_name, customer_address, customer_email) values
- ( 'Nguyen Van A', 'Ha Noi', 'a123@gmail.com'),
- ( 'Nguyen Thi B', 'Vinh Phuc', 'b234@gmail.com'),
- ( 'Tran Phuong C', 'Ha nam' , 'c345@gmail.com');
- select* from Customer;
- 
- insert into Users( user_name, user_password, user_Telephone, user_email) values
- ( 'NguyenA', '12345asfds' , '12331232112' , 'a12314@gmail.com'),
- ( 'TranB', '12491230awe', '15623157891', 'asdf@gmail,com'),
- ( 'LeC', '23123adf', '15324896217', 'rwe@gmail.com');
- select *from Users;
+ insert into Users(user_name, user_password, user_telephone, user_email) values
+ ('doann221', 'PF13VTCAcademy', '0395538200', 'doann221@gmail.com');
+ select * from Users;
  
  insert into Cat(cat_id, cat_name, cat_price, cat_quantity, cat_age, cat_color, cat_weight, cat_longevely) values
  ( 'meo mun', 2000000 , 100, 1 , 'black' , 2, 7),
@@ -87,4 +79,7 @@ cat_longevely int
  insert into InvoiceDetail( invoice_no, cat_id,  unit_price, quantity) values
  (1,2,3.3,4), (2,4,1243,5), (3,5, 312,6);
  select * from InvoiceDetail;
+ create user if not exists 'cat'@'localhost' identified by 'catsale';
+ grant all on Cat_sale.* to 'cat'@'localhost';
+ 
  
