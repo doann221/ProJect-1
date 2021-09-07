@@ -13,8 +13,8 @@ namespace DAL
           MySqlConnection connection = DbHelper.GetConnection();
           connection.Open();
           MySqlCommand command = connection.CreateCommand();
-          command.CommandText = "select * from user where user_name='"+
-            user.UserName+"' and user_pass='"+
+          command.CommandText = "select * from Users where user_name ='"+
+            user.UserName+"' and user_password='"+
             Md5Algorithms.CreateMD5(user.UserPassword)+"';";
           MySqlDataReader reader = command.ExecuteReader();
           if(reader.Read()){

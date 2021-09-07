@@ -11,7 +11,7 @@ customer_Email varchar(200)
 create table Users(
  user_id  int auto_increment primary key,
  user_name varchar(200),
- user_password varchar(200),
+ user_password varchar(200) not null,
  user_Telephone varchar(11),
  user_email varchar(200)
  );
@@ -56,7 +56,9 @@ cat_longevely int
  );
  
  insert into Users(user_name, user_password, user_telephone, user_email) values
- ('doann221', 'PF13VTCAcademy', '0395538200', 'doann221@gmail.com');
+ ('doann221', '2472edb1a3628b9f17107fac9ab81825', '0395538200', 'doann221@gmail.com');
+  -- --pass: PF13VTCAcademy
+
  select * from Users;
  
  insert into Cat(cat_id, cat_name, cat_price, cat_quantity, cat_age, cat_color, cat_weight, cat_longevely) values
@@ -81,5 +83,6 @@ cat_longevely int
  select * from InvoiceDetail;
  create user if not exists 'cat'@'localhost' identified by 'catsale';
  grant all on Cat_sale.* to 'cat'@'localhost';
+ select * from Users where user_name = 'doann221' and user_password = '2472edb1a3628b9f17107fac9ab81825';
  
  
