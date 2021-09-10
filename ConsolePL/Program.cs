@@ -9,8 +9,8 @@ namespace ConsoleAppPL
         static void Main(string[] args)
         {
             int choice = 0;
-            string[] menu = new string[2] { "1. Login", "2. exit" };
-            string[] menu1 = new string[3] { "1. Search", "2. CreateInvoice", "3. Exit" };
+            string[] menu = new string[2] { "|1. Login                            |", "|2. exit                             |" };
+            string[] menu1 = new string[3] { "|1. Search                           |", "|2. CreateInvoice                    |", "|3. Exit                             |" };
             Console.WriteLine();
             //valid username password here
 
@@ -18,6 +18,7 @@ namespace ConsoleAppPL
 
             do
             {
+                Console.ForegroundColor= ConsoleColor.DarkGreen;
                 Menu(menu);
                 Console.Write("Your choice: ");
                 choice = int.Parse(Console.ReadLine());
@@ -40,20 +41,34 @@ namespace ConsoleAppPL
                         int login = bl.Login(staff);
                         if (login <= 0)
                         {
-                            Console.WriteLine("Can't Login");
+                            Console.WriteLine("User Name or password in correct!! Please Input again!!");
                         }
                         else
                         {
+                            do{
+                            Console.ForegroundColor= ConsoleColor.DarkCyan;
                             Menu(menu1);
                             Console.Write("Your choice: ");
                             choice = int.Parse(Console.ReadLine());
-                            if (choice < 1 || choice > 2)
+                            if (choice < 1 || choice > 3)
                             {
                                 Console.WriteLine("Your chocie wrong !! Please choice again!!");
                                 Console.ReadLine();
                             }
-
-                        }
+                                switch(choice)
+                                {
+                                    case 1: 
+                                    Console.Write("Input name: ");
+                                    break;
+                                    case 2: 
+                                    Console.WriteLine("Hello");
+                                    break;
+                                    case 3: 
+                                    break;
+                                }
+                            break;
+                            }while(choice < 1 || choice > 3);
+                         }
                         break;
                     case 2:
                         break;
