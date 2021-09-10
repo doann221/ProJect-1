@@ -1,0 +1,3 @@
+D:\Temp\LoginDemo\Project-1\ProJect-1\Persistance.dll
+D:\Temp\LoginDemo\Project-1\ProJect-1\Persistance.deps.json
+D:\Temp\LoginDemo\Project-1\ProJect-1\Persistance.pdb

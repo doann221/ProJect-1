@@ -1,0 +1,15 @@
+D:\Temp\LoginDemo\Project-1\ProJect-1\DAl\bin\Release\net5.0\DAL.deps.json
+D:\Temp\LoginDemo\Project-1\ProJect-1\DAl\bin\Release\net5.0\DAL.dll
+D:\Temp\LoginDemo\Project-1\ProJect-1\DAl\bin\Release\net5.0\ref\DAL.dll
+D:\Temp\LoginDemo\Project-1\ProJect-1\DAl\bin\Release\net5.0\DAL.pdb
+D:\Temp\LoginDemo\Project-1\ProJect-1\DAl\bin\Release\net5.0\Persistance.dll
+D:\Temp\LoginDemo\Project-1\ProJect-1\DAl\bin\Release\net5.0\Persistance.pdb
+D:\Temp\LoginDemo\Project-1\ProJect-1\DAl\obj\Release\net5.0\DAL.csprojAssemblyReference.cache
+D:\Temp\LoginDemo\Project-1\ProJect-1\DAl\obj\Release\net5.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Temp\LoginDemo\Project-1\ProJect-1\DAl\obj\Release\net5.0\DAL.AssemblyInfoInputs.cache
+D:\Temp\LoginDemo\Project-1\ProJect-1\DAl\obj\Release\net5.0\DAL.AssemblyInfo.cs
+D:\Temp\LoginDemo\Project-1\ProJect-1\DAl\obj\Release\net5.0\DAL.csproj.CoreCompileInputs.cache
+D:\Temp\LoginDemo\Project-1\ProJect-1\DAl\obj\Release\net5.0\DAL.csproj.CopyComplete
+D:\Temp\LoginDemo\Project-1\ProJect-1\DAl\obj\Release\net5.0\DAL.dll
+D:\Temp\LoginDemo\Project-1\ProJect-1\DAl\obj\Release\net5.0\ref\DAL.dll
+D:\Temp\LoginDemo\Project-1\ProJect-1\DAl\obj\Release\net5.0\DAL.pdb

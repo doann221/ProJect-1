@@ -4,11 +4,12 @@ using DAL;
 
 namespace BL
 {
-    public class UserBl
+    public class UserBL
     {
-        private UserDAL dal = new UserDAL();
-        public int Login(User user){
-            return dal.login(user);
+        private UserDal dal = new UserDal();
+        public int Login(User user)
+        {
+            return dal.Login(user);
         }
     }
 }

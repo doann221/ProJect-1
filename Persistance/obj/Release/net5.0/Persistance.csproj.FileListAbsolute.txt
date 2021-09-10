@@ -1,0 +1,12 @@
+D:\Temp\LoginDemo\Project-1\ProJect-1\Persistance\bin\Release\net5.0\Persistance.deps.json
+D:\Temp\LoginDemo\Project-1\ProJect-1\Persistance\bin\Release\net5.0\Persistance.dll
+D:\Temp\LoginDemo\Project-1\ProJect-1\Persistance\bin\Release\net5.0\ref\Persistance.dll
+D:\Temp\LoginDemo\Project-1\ProJect-1\Persistance\bin\Release\net5.0\Persistance.pdb
+D:\Temp\LoginDemo\Project-1\ProJect-1\Persistance\obj\Release\net5.0\Persistance.csprojAssemblyReference.cache
+D:\Temp\LoginDemo\Project-1\ProJect-1\Persistance\obj\Release\net5.0\Persistance.GeneratedMSBuildEditorConfig.editorconfig
+D:\Temp\LoginDemo\Project-1\ProJect-1\Persistance\obj\Release\net5.0\Persistance.AssemblyInfoInputs.cache
+D:\Temp\LoginDemo\Project-1\ProJect-1\Persistance\obj\Release\net5.0\Persistance.AssemblyInfo.cs
+D:\Temp\LoginDemo\Project-1\ProJect-1\Persistance\obj\Release\net5.0\Persistance.csproj.CoreCompileInputs.cache
+D:\Temp\LoginDemo\Project-1\ProJect-1\Persistance\obj\Release\net5.0\Persistance.dll
+D:\Temp\LoginDemo\Project-1\ProJect-1\Persistance\obj\Release\net5.0\ref\Persistance.dll
+D:\Temp\LoginDemo\Project-1\ProJect-1\Persistance\obj\Release\net5.0\Persistance.pdb
