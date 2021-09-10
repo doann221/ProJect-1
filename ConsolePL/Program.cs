@@ -12,10 +12,7 @@ namespace ConsoleAppPL
             string[] menu = new string[2] { "|1. Login                            |", "|2. exit                             |" };
             string[] menu1 = new string[3] { "|1. Search                           |", "|2. CreateInvoice                    |", "|3. Exit                             |" };
             Console.WriteLine();
-            //valid username password here
-
             UserBL bl = new UserBL();
-
             do
             {
                 Console.ForegroundColor= ConsoleColor.DarkGreen;
@@ -41,10 +38,13 @@ namespace ConsoleAppPL
                         int login = bl.Login(staff);
                         if (login <= 0)
                         {
-                            Console.WriteLine("User Name or password in correct!! Please Input again!!");
+                            Console.WriteLine("User Name or password incorrect!! Please Input again!!");
                         }
                         else
                         {
+                            Console.WriteLine("Logged in successfully");
+                            Console.WriteLine("Press enter to continue..");
+                            Console.ReadLine();
                             do{
                             Console.ForegroundColor= ConsoleColor.DarkCyan;
                             Menu(menu1);
