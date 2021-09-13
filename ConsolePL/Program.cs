@@ -9,46 +9,30 @@ namespace ConsoleAppPL
         static void Main(string[] args)
         {
             int choice = 0;
-            string[] menu = new string[2] { "|1. Login                            |", "|2. exit                             |" };
             string[] menu1 = new string[3] { "|1. Search                           |", "|2. CreateInvoice                    |", "|3. Exit                             |" };
             Console.WriteLine();
             UserBL bl = new UserBL();
-            do
+            Console.ForegroundColor= ConsoleColor.DarkGreen;
+            GetLine();
+            Console.Write("User Name: ");
+            string userName = Console.ReadLine();
+            Console.Write("Password: ");
+            string pass = GetPassword();
+            Console.WriteLine();
+            GetLine();
+            User staff = new User() { UserName = userName, UserPassword = pass };
+            int login = bl.Login(staff);
+            if (login <= 0)
             {
-                Console.ForegroundColor= ConsoleColor.DarkGreen;
-                Menu(menu);
-                Console.Write("Your choice: ");
-                choice = int.Parse(Console.ReadLine());
-                if (choice < 1 || choice > 2)
-                {
-                    Console.WriteLine("Your chocie wrong !! Please choice again!!");
-                    Console.ReadLine();
-                }
-                switch (choice)
-                {
-                    case 1:
-                        GetLine();
-                        Console.Write("User Name: ");
-                        string userName = Console.ReadLine();
-                        Console.Write("Password: ");
-                        string pass = GetPassword();
-                        Console.WriteLine();
-                        GetLine();
-                        User staff = new User() { UserName = userName, UserPassword = pass };
-                        int login = bl.Login(staff);
-                        if (login <= 0)
-                        {
-                            Console.WriteLine("User Name or password incorrect!! Please Input again!!");
-                        }
-                        else
-                        {
-                            Console.WriteLine("Logged in successfully");
-                            Console.WriteLine("Press enter to continue..");
-                            Console.ReadLine();
-                            do{
-                            Console.ForegroundColor= ConsoleColor.DarkCyan;
-                            Menu(menu1);
-                            Console.Write("Your choice: ");
+            Console.WriteLine("User Name or password incorrect!! Please Input again!!");
+            }
+            else
+            {
+            Console.WriteLine("Logged in successfully");
+            do{
+            Console.ForegroundColor= ConsoleColor.DarkCyan;
+            Menu(menu1);
+            Console.Write("Your choice: ");
                             choice = int.Parse(Console.ReadLine());
                             if (choice < 1 || choice > 3)
                             {
@@ -69,12 +53,6 @@ namespace ConsoleAppPL
                             break;
                             }while(choice < 1 || choice > 3);
                          }
-                        break;
-                    case 2:
-                        break;
-                }
-            } while (choice < 1 || choice > 2);
-
         }
 
         static string GetPassword()
