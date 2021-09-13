@@ -860,11 +860,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Temp\\LoginDemo\\Project-1\\ProJect-1\\DAL\\DAL.csproj",
+      "projectUniqueName": "D:\\Temp\\Project-1\\ProJect-1\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "D:\\Temp\\LoginDemo\\Project-1\\ProJect-1\\DAL\\DAL.csproj",
+      "projectPath": "D:\\Temp\\Project-1\\ProJect-1\\DAL\\DAL.csproj",
       "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-      "outputPath": "D:\\Temp\\LoginDemo\\Project-1\\ProJect-1\\DAL\\obj\\",
+      "outputPath": "D:\\Temp\\Project-1\\ProJect-1\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -879,8 +879,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Temp\\LoginDemo\\Project-1\\ProJect-1\\Persistance\\Persistance.csproj": {
-              "projectPath": "D:\\Temp\\LoginDemo\\Project-1\\ProJect-1\\Persistance\\Persistance.csproj"
+            "D:\\Temp\\Project-1\\ProJect-1\\Persistance\\Persistance.csproj": {
+              "projectPath": "D:\\Temp\\Project-1\\ProJect-1\\Persistance\\Persistance.csproj"
             }
           }
         }
