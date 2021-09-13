@@ -9,10 +9,13 @@ namespace ConsoleAppPL
         static void Main(string[] args)
         {
             int choice = 0;
-            string[] menu1 = new string[3] { "|1. Search                           |", "|2. CreateInvoice                    |", "|3. Exit                             |" };
+            string[] menu1 = new string[3] {"|1. Search                           |", "|2. CreateInvoice                    |", "|3. Exit                             |" };
+            string[] menu2 = new string[2] {"|1. Search by name                   | ","|2. Search by id                     |"};
             Console.WriteLine();
             UserBL bl = new UserBL();
             Console.ForegroundColor= ConsoleColor.DarkGreen;
+            GetLine();
+            Console.WriteLine("+--        Login                   --+");
             GetLine();
             Console.Write("User Name: ");
             string userName = Console.ReadLine();
@@ -29,31 +32,32 @@ namespace ConsoleAppPL
             else
             {
             Console.WriteLine("Logged in successfully");
-            do{
-            Console.ForegroundColor= ConsoleColor.DarkCyan;
-            Menu(menu1);
-            Console.Write("Your choice: ");
-                            choice = int.Parse(Console.ReadLine());
-                            if (choice < 1 || choice > 3)
-                            {
-                                Console.WriteLine("Your chocie wrong !! Please choice again!!");
-                                Console.ReadLine();
-                            }
-                                switch(choice)
-                                {
-                                    case 1: 
-                                    Console.Write("Input name: ");
-                                    break;
-                                    case 2: 
-                                    Console.WriteLine("Hello");
-                                    break;
-                                    case 3: 
-                                    break;
-                                }
-                            break;
-                            }while(choice < 1 || choice > 3);
-                         }
-        }
+        do{
+                Console.ForegroundColor= ConsoleColor.DarkCyan;
+                Menu(menu1);
+                Console.Write("Your choice: ");
+                choice = int.Parse(Console.ReadLine());
+                if (choice < 1 || choice > 3)
+                {
+                Console.WriteLine("Your chocie wrong !! Please choice again!!");
+                Console.ReadLine();
+                }
+            switch(choice)
+            {
+                case 1: 
+                    Menu(menu2);
+                    SearchMenu();
+                    break;
+                case 2: 
+                Console.WriteLine("Hello");
+                break;
+                case 3: 
+                break;
+            }
+                break;
+        }while(choice < 1 || choice > 3);
+    }
+}
 
         static string GetPassword()
         {
@@ -94,6 +98,28 @@ namespace ConsoleAppPL
             }
             GetLine();
         }
-
+    static void SearchMenu(){ 
+        int str=0;
+        do{
+           Console.Write("Input your choice: ");
+                str = int.Parse(Console.ReadLine());
+                if (str < 1 || str > 2)
+                {
+                Console.Write("Your chocie wrong !! Please choice again!!");
+                Console.ReadLine();
+                }
+                switch (str)
+                {
+                    case 1: 
+                    Console.WriteLine("afadsfa");
+                    break;
+                    case 2:
+                    Console.WriteLine("afadsfa");
+                    break;
+                }
+            }while(str <1 || str > 2);
+                
+    }
+    
     }
 }
