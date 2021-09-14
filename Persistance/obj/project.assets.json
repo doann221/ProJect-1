@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Temp\\Project-1\\ProJect-1\\Persistance\\Persistance.csproj",
+      "projectUniqueName": "D:\\Temp\\Projectsem-1\\ProJect-1\\Persistance\\Persistance.csproj",
       "projectName": "Persistance",
-      "projectPath": "D:\\Temp\\Project-1\\ProJect-1\\Persistance\\Persistance.csproj",
+      "projectPath": "D:\\Temp\\Projectsem-1\\ProJect-1\\Persistance\\Persistance.csproj",
       "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-      "outputPath": "D:\\Temp\\Project-1\\ProJect-1\\Persistance\\obj\\",
+      "outputPath": "D:\\Temp\\Projectsem-1\\ProJect-1\\Persistance\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config"
