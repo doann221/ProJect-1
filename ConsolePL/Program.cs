@@ -13,6 +13,8 @@ namespace ConsoleAppPL
             string[] menu2 = new string[2] {"|1. Search by name                   | ","|2. Search by id                     |"};
             Console.WriteLine();
             UserBL bl = new UserBL();
+            while (true)
+        {  
             Console.ForegroundColor= ConsoleColor.DarkGreen;
             GetLine();
             Console.WriteLine("+--        Login                   --+");
@@ -23,12 +25,30 @@ namespace ConsoleAppPL
             string pass = GetPassword();
             Console.WriteLine();
             GetLine();
-            User staff = new User() { UserName = userName, UserPassword = pass };
-            int login = bl.Login(staff);
+            User user = new User() { UserName = userName, UserPassword = pass };
+            int login = bl.Login(user);
+            string str ;
             if (login <= 0)
             {
             Console.WriteLine("User Name or password incorrect!! Please Input again!!");
+            Console.Write("Do you want to continue? (Y/N): ");
+            str = Console.ReadLine();
+            if(str != "y" || str != "Y"){
+                if(str != "n" || str != "n"){
+                   Console.WriteLine("INVALID CHOICE");
+                   
+                }
             }
+            switch (str)
+            {
+                case "Y":
+                    break;
+                case "y":
+                    break;
+                    case "N": return;
+                    case "n": return;
+            }
+         }
             else
             {
             Console.WriteLine("Logged in successfully");
@@ -56,6 +76,9 @@ namespace ConsoleAppPL
             }
                 break;
         }while(choice < 1 || choice > 3);
+        } 
+        
+            
     }
 }
 
