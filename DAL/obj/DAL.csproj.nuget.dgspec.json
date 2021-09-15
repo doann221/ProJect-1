@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Temp\\Projectsem-1\\ProJect-1\\DAL\\DAL.csproj": {}
+    "D:\\Temp\\Projectsem-1\\ProJect-1\\DAl\\DAL.csproj": {}
   },
   "projects": {
-    "D:\\Temp\\Projectsem-1\\ProJect-1\\DAL\\DAL.csproj": {
+    "D:\\Temp\\Projectsem-1\\ProJect-1\\DAl\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Temp\\Projectsem-1\\ProJect-1\\DAL\\DAL.csproj",
+        "projectUniqueName": "D:\\Temp\\Projectsem-1\\ProJect-1\\DAl\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "D:\\Temp\\Projectsem-1\\ProJect-1\\DAL\\DAL.csproj",
+        "projectPath": "D:\\Temp\\Projectsem-1\\ProJect-1\\DAl\\DAL.csproj",
         "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-        "outputPath": "D:\\Temp\\Projectsem-1\\ProJect-1\\DAL\\obj\\",
+        "outputPath": "D:\\Temp\\Projectsem-1\\ProJect-1\\DAl\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config"

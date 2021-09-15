@@ -29,7 +29,11 @@ cat_price decimal
 insert into Staffs( user_name, user_pass, role) values
 ( 'doann221', '7d669799ea755df1aa4dd7b92e443013', 1);
 -- pass: Catsale 123
+insert into Staffs( user_name, user_pass, role) values
+( 'anphuong123456', 'd9fbdbecb9ebdf50896ab4dfbe161bd4', 1);
+-- pass: Cat1234v
 select * from Staffs;
+
 
 
 insert into Cat(cat_name, cat_age, cat_color, cat_weight, cat_longevety, cat_quantity, cat_price) values
@@ -48,7 +52,22 @@ insert into Cat(cat_name, cat_age, cat_color, cat_weight, cat_longevety, cat_qua
 ('Mèo Anh lông ngắn', '8 tháng', 'xanh lam', 5, '12 -17 năm', 5 , 12000000),
 (' Mèo Burmilla', ' 8 tháng', 'carammel', 5 , '10-15 năm', 3, 10000000),
 ('Mèo Chartreux', '7 tháng', 'xám bạc', 4.5, '12-15 năm', 4, 12000000);
-
+insert into Cat(cat_name, cat_age, cat_color, cat_weight, cat_longevety, cat_quantity, cat_price) values
+('Mèo Cymric', '13 tháng', 'tam thể', '3', '16 năm', '10', '10000000'),
+('Mèo Devon Rex', '14 tháng', 'xanh lam', '3', '10 năm', '8', '8000000'),
+('Mèo Mau Ai Cập', '13 tháng', 'bạc xanh', '4', '12 năm', '5', '14000000'),
+('Mèo Exotic lông ngắn', '15 tháng', 'bạc', '4', '20 năm', '8', '20000000'),
+('Mèo Havana Brown', '17 tháng', 'xám hồng', '5', '18 năm', '4', '18000000'),
+('Mèo Himalayan', '18 tháng', 'xanh da trời', '8', '19 năm', '8', '10000000'),
+('Mèo Nhật đuôi cộc', '10 tháng', 'xanh lam', '4', '15 năm', '10', '12000000'),
+('Mèo Java', '15 tháng', 'trắng', '5', '12 năm', '6', '18000000'),
+('Mèo Korat', '12 tháng', 'xám xanh', '5', '10 năm', '7', '14000000'),
+('Mèo Kurilian đuôi cộc', '14 tháng', 'nâu trắng', '6', '14 năm', '9', '15000000'),
+('Mèo Laperm', '14 tháng', 'lông rùa', '5', '16 năm', '4', '22000000'),
+('Mèo Li Hua', '14 tháng', 'đen vằn', '7', '15 năm', '5', '17000000'),
+('Mèo Pixi Bob', '13 tháng', 'đốm', '10', '14 năm', '7', '15000000'),
+('Mèo Ragamuffin', '15 tháng', 'khói trắng', '10', '13 năm', '6', '20000000'),
+('Mèo Ragdoll', '14 tháng', 'xanh lam', '10', '20 năm', '8', '25000000');
 select * from Cat;
 
 

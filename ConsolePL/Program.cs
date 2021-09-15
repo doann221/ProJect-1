@@ -148,7 +148,8 @@ namespace ConsoleAppPL
             bool stop = false;
             int choice =  -1;
             
-            while(!stop){
+            while(!stop)
+            {
                 Console.Clear();
                 Console.WriteLine("+--------------------------+");
                 Console.WriteLine("|       Search By ID       |");
@@ -156,11 +157,13 @@ namespace ConsoleAppPL
                 Console.Write("Input ID : ");
                 string input = Console.ReadLine();
                 if(!int.TryParse(input, out choice)) choice = -1;
-                if(choice == 0){
+                if(choice == 0)
+                {
                     stop = true;
                     break;
                 }
-                while(choice < 1){
+                while(choice < 1)
+                {
                     Console.Write("Invalid!choice again : ");
                     input = Console.ReadLine();
                     if(!int.TryParse(input,out choice)) choice = -1;
@@ -169,14 +172,24 @@ namespace ConsoleAppPL
                 CatBL cbl = new CatBL();
                 cat = cbl.SearchCatByID(choice);
                 Console.WriteLine(cat);
-                Console.ReadLine();
+                Console.Write("Do you want to continue? (Y/N): ");
+                string str = Console.ReadLine();
+                if(input == "y"|| input == "Y"){
+                    continue;
+                }
+                if(input == "n"|| input == "N"){
+                    break;
+                }
+               break;
             }
         }
-        public static void SearchByName(){
+        public static void SearchByName()
+        {
             bool stop = false;
             int choice =  -1;
             
-            while(!stop){
+            while(!stop)
+            {
                 Console.Clear();
                 Console.WriteLine("+--------------------------+");
                 Console.WriteLine("|       Search By Name     |");

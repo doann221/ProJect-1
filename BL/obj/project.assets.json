@@ -858,8 +858,8 @@
     },
     "DAL/1.0.0": {
       "type": "project",
-      "path": "../DAL/DAL.csproj",
-      "msbuildProject": "../DAL/DAL.csproj"
+      "path": "../DAl/DAL.csproj",
+      "msbuildProject": "../DAl/DAL.csproj"
     },
     "Persistance/1.0.0": {
       "type": "project",
@@ -898,8 +898,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Temp\\Projectsem-1\\ProJect-1\\DAL\\DAL.csproj": {
-              "projectPath": "D:\\Temp\\Projectsem-1\\ProJect-1\\DAL\\DAL.csproj"
+            "D:\\Temp\\Projectsem-1\\ProJect-1\\DAl\\DAL.csproj": {
+              "projectPath": "D:\\Temp\\Projectsem-1\\ProJect-1\\DAl\\DAL.csproj"
             },
             "D:\\Temp\\Projectsem-1\\ProJect-1\\Persistance\\Persistance.csproj": {
               "projectPath": "D:\\Temp\\Projectsem-1\\ProJect-1\\Persistance\\Persistance.csproj"
