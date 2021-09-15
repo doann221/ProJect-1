@@ -52,6 +52,7 @@ namespace ConsoleAppPL
             else
             {
             Console.WriteLine("Logged in successfully");
+            Console.Clear();
         do{
                 Console.ForegroundColor= ConsoleColor.DarkCyan;
                 Menu(menu1);
@@ -134,15 +135,70 @@ namespace ConsoleAppPL
                 switch (str)
                 {
                     case 1: 
-                    Console.WriteLine("afadsfa");
+                   SearchByName();
                     break;
                     case 2:
-                    Console.WriteLine("afadsfa");
+                   SearchByID();
                     break;
                 }
             }while(str <1 || str > 2);
                 
     }
-    
+    public static void SearchByID(){
+            bool stop = false;
+            int choice =  -1;
+            
+            while(!stop){
+                Console.Clear();
+                Console.WriteLine("+--------------------------+");
+                Console.WriteLine("|       Search By ID       |");
+                Console.WriteLine("+--------------------------+");
+                Console.Write("Input ID : ");
+                string input = Console.ReadLine();
+                if(!int.TryParse(input, out choice)) choice = -1;
+                if(choice == 0){
+                    stop = true;
+                    break;
+                }
+                while(choice < 1){
+                    Console.Write("Invalid!choice again : ");
+                    input = Console.ReadLine();
+                    if(!int.TryParse(input,out choice)) choice = -1;
+                }
+                Cat cat = new Cat();
+                CatBL cbl = new CatBL();
+                cat = cbl.SearchCatByID(choice);
+                Console.WriteLine(cat);
+                Console.ReadLine();
+            }
+        }
+        public static void SearchByName(){
+            bool stop = false;
+            int choice =  -1;
+            
+            while(!stop){
+                Console.Clear();
+                Console.WriteLine("+--------------------------+");
+                Console.WriteLine("|       Search By Name     |");
+                Console.WriteLine("+--------------------------+");
+                Console.Write("Input Name : ");
+                string input = Console.ReadLine();
+                if(!int.TryParse(input, out choice)) choice = -1;
+                if(choice == 0){
+                    stop = true;
+                    break;
+                }
+                while(choice < 1){
+                    Console.Write("Invalid!choice again : ");
+                    input = Console.ReadLine();
+                    if(!int.TryParse(input,out choice)) choice = -1;
+                }
+                Cat cat = new Cat();
+                CatBL cbl = new CatBL();
+                cat = cbl.SearchCatByName(choice);
+                Console.WriteLine(cat);
+                Console.ReadLine();
+            }
     }
+}
 }
