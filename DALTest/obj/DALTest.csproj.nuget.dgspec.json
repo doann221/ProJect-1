@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Temp\\LoginDemo\\Project-1\\ProJect-1\\DALTest\\DALTest.csproj": {}
+    "D:\\Temp\\Projectsem-1\\ProJect-1\\DALTest\\DALTest.csproj": {}
   },
   "projects": {
-    "D:\\Temp\\LoginDemo\\Project-1\\ProJect-1\\DALTest\\DALTest.csproj": {
+    "D:\\Temp\\Projectsem-1\\ProJect-1\\DALTest\\DALTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Temp\\LoginDemo\\Project-1\\ProJect-1\\DALTest\\DALTest.csproj",
+        "projectUniqueName": "D:\\Temp\\Projectsem-1\\ProJect-1\\DALTest\\DALTest.csproj",
         "projectName": "DALTest",
-        "projectPath": "D:\\Temp\\LoginDemo\\Project-1\\ProJect-1\\DALTest\\DALTest.csproj",
+        "projectPath": "D:\\Temp\\Projectsem-1\\ProJect-1\\DALTest\\DALTest.csproj",
         "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-        "outputPath": "D:\\Temp\\LoginDemo\\Project-1\\ProJect-1\\DALTest\\obj\\",
+        "outputPath": "D:\\Temp\\Projectsem-1\\ProJect-1\\DALTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,11 +26,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Temp\\LoginDemo\\Project-1\\ProJect-1\\DAL\\DAL.csproj": {
-                "projectPath": "D:\\Temp\\LoginDemo\\Project-1\\ProJect-1\\DAL\\DAL.csproj"
+              "D:\\Temp\\Projectsem-1\\ProJect-1\\DAL\\DAL.csproj": {
+                "projectPath": "D:\\Temp\\Projectsem-1\\ProJect-1\\DAL\\DAL.csproj"
               },
-              "D:\\Temp\\LoginDemo\\Project-1\\ProJect-1\\Persistance\\Persistance.csproj": {
-                "projectPath": "D:\\Temp\\LoginDemo\\Project-1\\ProJect-1\\Persistance\\Persistance.csproj"
+              "D:\\Temp\\Projectsem-1\\ProJect-1\\Persistance\\Persistance.csproj": {
+                "projectPath": "D:\\Temp\\Projectsem-1\\ProJect-1\\Persistance\\Persistance.csproj"
               }
             }
           }
@@ -85,14 +85,14 @@
         }
       }
     },
-    "D:\\Temp\\LoginDemo\\Project-1\\ProJect-1\\DAL\\DAL.csproj": {
+    "D:\\Temp\\Projectsem-1\\ProJect-1\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Temp\\LoginDemo\\Project-1\\ProJect-1\\DAL\\DAL.csproj",
+        "projectUniqueName": "D:\\Temp\\Projectsem-1\\ProJect-1\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "D:\\Temp\\LoginDemo\\Project-1\\ProJect-1\\DAL\\DAL.csproj",
+        "projectPath": "D:\\Temp\\Projectsem-1\\ProJect-1\\DAL\\DAL.csproj",
         "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-        "outputPath": "D:\\Temp\\LoginDemo\\Project-1\\ProJect-1\\DAL\\obj\\",
+        "outputPath": "D:\\Temp\\Projectsem-1\\ProJect-1\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -107,8 +107,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Temp\\LoginDemo\\Project-1\\ProJect-1\\Persistance\\Persistance.csproj": {
-                "projectPath": "D:\\Temp\\LoginDemo\\Project-1\\ProJect-1\\Persistance\\Persistance.csproj"
+              "D:\\Temp\\Projectsem-1\\ProJect-1\\Persistance\\Persistance.csproj": {
+                "projectPath": "D:\\Temp\\Projectsem-1\\ProJect-1\\Persistance\\Persistance.csproj"
               }
             }
           }
@@ -147,14 +147,14 @@
         }
       }
     },
-    "D:\\Temp\\LoginDemo\\Project-1\\ProJect-1\\Persistance\\Persistance.csproj": {
+    "D:\\Temp\\Projectsem-1\\ProJect-1\\Persistance\\Persistance.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Temp\\LoginDemo\\Project-1\\ProJect-1\\Persistance\\Persistance.csproj",
+        "projectUniqueName": "D:\\Temp\\Projectsem-1\\ProJect-1\\Persistance\\Persistance.csproj",
         "projectName": "Persistance",
-        "projectPath": "D:\\Temp\\LoginDemo\\Project-1\\ProJect-1\\Persistance\\Persistance.csproj",
+        "projectPath": "D:\\Temp\\Projectsem-1\\ProJect-1\\Persistance\\Persistance.csproj",
         "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-        "outputPath": "D:\\Temp\\LoginDemo\\Project-1\\ProJect-1\\Persistance\\obj\\",
+        "outputPath": "D:\\Temp\\Projectsem-1\\ProJect-1\\Persistance\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config"

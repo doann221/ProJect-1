@@ -6,8 +6,8 @@ using DAL;
 namespace BL
 {
     public class CatBL{
-       private CatDAL cdal = new CatDAL();
-        public Cat GetCatByID(int catId)
+       private static CatDAL cdal = new CatDAL();
+        public static Cat GetCatByID(int catId)
         {
             return cdal.GetCatByID(catId);
         }

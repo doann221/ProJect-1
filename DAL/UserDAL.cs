@@ -4,30 +4,35 @@ using Persistance;
 
 namespace DAL
 {
-    public class UserDal{
-      public int Login(User user){
-        int login = 0;
-        
-          try{
-          MySqlConnection connection = DbConfig.GetConnection();
-          connection.Open();
-          MySqlCommand command = connection.CreateCommand();
-          command.CommandText = "select * from Staffs where user_name='"+
-            user.UserName+"' and user_pass='"+
-            Md5Algorithms.CreateMD5(user.UserPassword)+"';";
-          MySqlDataReader reader = command.ExecuteReader();
-          if(reader.Read()){
-            login = 1;
-          }else
-          {
-              login = 0;
-          }
-          reader.Close();
-          connection.Close();
-        }catch{
-          login = -1;
+    public class UserDal
+    {
+        private MySqlConnection connection = DbConfig.GetConnection();
+        public bool Login(User user)
+        {
+                bool login = true;
+                try
+                {
+
+                    connection.Open();
+                    MySqlCommand command = connection.CreateCommand();
+                    command.CommandText = "select * from Staffs where user_name='" +
+                    user.UserName + "' and user_pass='" +
+                    Md5Algorithms.CreateMD5(user.UserPassword) + "';";
+                    MySqlDataReader reader = command.ExecuteReader();
+                    if (reader.Read())
+                    {
+                        login = false;
+                    }
+                    reader.Close();
+                    connection.Close();
+                }
+                catch
+                {
+                    login = true;
+                }
+                
+            return login;
         }
-        return login;
-      }
- }
+
+    }
 }
