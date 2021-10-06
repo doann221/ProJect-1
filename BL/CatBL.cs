@@ -6,11 +6,18 @@ using DAL;
 namespace BL
 {
     public class CatBL{
-        public Cat SearchCatByID(int catID){
-            return CatDAL.GetCatByID(catID);
+       private CatDAL cdal = new CatDAL();
+        public Cat GetCatByID(int catId)
+        {
+            return cdal.GetCatByID(catId);
         }
-        public Cat SearchCatByName(int catName){
-            return CatDAL.GetCatByName(catName);
+        public List<Cat> GetAll()
+        {
+            return cdal.GetCatByName(CatFilter.GET_ALL, null);
+        }
+        public List<Cat> GetByName(string catName)
+        {
+            return cdal.GetCatByName(CatFilter.FILTER_BY_ITEM_NAME, new Cat{CatName=catName});
         }
     }
 }

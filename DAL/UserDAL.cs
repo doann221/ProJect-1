@@ -7,8 +7,9 @@ namespace DAL
     public class UserDal{
       public int Login(User user){
         int login = 0;
-        try{
-          MySqlConnection connection = DbHelper.GetConnection();
+        
+          try{
+          MySqlConnection connection = DbConfig.GetConnection();
           connection.Open();
           MySqlCommand command = connection.CreateCommand();
           command.CommandText = "select * from Staffs where user_name='"+
