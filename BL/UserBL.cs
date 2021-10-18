@@ -7,7 +7,7 @@ namespace BL
     public class UserBL
     {
         private UserDal dal = new UserDal();
-        public bool Login(User user)
+        public User Login(User user)
         {
             return dal.Login(user);
         }

@@ -7,6 +7,7 @@ namespace Persistance
         public int? CustomerId {set;get;}
         public string CustomerName {set;get;}
         public string CustomerAddress{set;get;}
+        public string CustomerPhone{set; get;}
 
         public override bool Equals(object obj){
             if(obj is Customer){

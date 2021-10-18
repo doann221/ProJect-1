@@ -3,9 +3,9 @@ using Xunit;
 using Persistance;
 using DAL;
 
-namespace CatTest
+namespace DALTest
 {
-    public class CatDalTest
+    public class CatTest
     {
         private CatDAL dal = new CatDAL();
         private Cat cat = new Cat();
@@ -13,37 +13,54 @@ namespace CatTest
         [Theory]
         [InlineData(1)]
         [InlineData(5)]
+        [InlineData(12)]
         [InlineData(25)]
-        public void SearchByID_Test1(int id)
+        [InlineData(30)]
+        public void SearchByID_TestTrue(int catId)
         {
-            cat.CatID = id;
-            var result = dal.GetCatByID(id);
+            cat.CatID = catId;
+            var result = dal.GetCatByID(catId);
             Assert.True(result != null);
-            Assert.True(result.CatID == id);
+            Assert.True(result.CatID == catId);
         }
+
         [Theory]
-        [InlineData("Mèo Bombay")]
-        [InlineData("Mèo  Himalayan")]
-        [InlineData("Mèo Java")]
-        [InlineData("Mèo Pixi Bob")]
-        public void SearchByName_Test1(string name)
+        [InlineData(0)]
+        [InlineData(75)]
+        [InlineData(513)]
+        [InlineData(100)]
+        [InlineData(99)]
+        public void SearchByID_TestFalse(int catId)
         {
-            cat.CatName=name;
-            var result = dal.GetCatByName(1, cat);
-            Assert.Equals(result, cat.CatName = name);
+            cat.CatID = catId;
+            var result = dal.GetCatByID(catId);
+            Assert.True(result == null);
         }
+
         [Theory]
-        [InlineData("meo con")]
-        [InlineData("meo me")]
-        [InlineData("meo beo")]
-        [InlineData("meo khong long")]
-        [InlineData("cho")]
-        public void SearchByName_Test2(string name)
+        [InlineData(" British Longhair Cat")]
+        [InlineData(" Ragdoll")]
+        [InlineData(" Abyssinian")]
+        [InlineData(" Birman")]
+        [InlineData(" Java")]
+        public void SearchByName_TestTrue(string name)
         {
             cat.CatName = name;
-            var result  = dal.GetCatByName(1, cat);
-            Assert.NotEaqual(result,cat.CatName = name);
+            var result = dal.GetCatByName(1, cat);
+            Assert.Contains(result, cat => cat.CatName == name);
         }
-        
+
+        [Theory]
+        [InlineData("meo ngu")]
+        [InlineData("meo con")]
+        [InlineData("meo trui long")]
+        [InlineData("sieu meo")]
+        [InlineData("meo bo")]
+        public void SearchByName_TestFalse(string name)
+        {
+            cat.CatName = name;
+            var result = dal.GetCatByName(1, cat);
+            Assert.DoesNotContain(result, cat => cat.CatName == name);
+        }
     }
 }

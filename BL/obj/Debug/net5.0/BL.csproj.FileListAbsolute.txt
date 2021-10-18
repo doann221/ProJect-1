@@ -49,3 +49,4 @@ D:\Temp\Projectsem-1\ProJect-1\BL\obj\Debug\net5.0\BL.csproj.CopyComplete
 D:\Temp\Projectsem-1\ProJect-1\BL\obj\Debug\net5.0\BL.dll
 D:\Temp\Projectsem-1\ProJect-1\BL\obj\Debug\net5.0\ref\BL.dll
 D:\Temp\Projectsem-1\ProJect-1\BL\obj\Debug\net5.0\BL.pdb
+D:\Temp\Projectsem-1\ProJect-1\BL\bin\Debug\net5.0\DbConfig.txt

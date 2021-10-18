@@ -7,15 +7,15 @@ namespace BL
 {
     public class CustomerBL
     {
-        private CustomerDAL cdal = new CustomerDAL();
+        private CustomerDAL csdal = new CustomerDAL();
         public Customer GetById(int customerId)
         {
-            return cdal.GetById(customerId);
+            return csdal.GetById(customerId);
         }
 
         public int AddCustomer(Customer customer)
         {
-            return cdal.AddCustomer(customer) ?? 0;
+            return csdal.AddCustomer(customer) ?? 0;
         }
     }
 }

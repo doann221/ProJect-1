@@ -244,3 +244,5 @@ D:\Temp\Projectsem-1\ProJect-1\DALTest\bin\Debug\net5.0\DAL.pdb
 D:\Temp\Projectsem-1\ProJect-1\DALTest\bin\Debug\net5.0\Persistance.pdb
 D:\Temp\Projectsem-1\ProJect-1\DALTest\obj\Debug\net5.0\DALTest.csproj.CopyComplete
 D:\Temp\Projectsem-1\ProJect-1\DALTest\obj\Debug\net5.0\DALTest.genruntimeconfig.cache
+D:\Temp\Projectsem-1\ProJect-1\DALTest\bin\Debug\net5.0\xunit.runner.json
+D:\Temp\Projectsem-1\ProJect-1\DALTest\bin\Debug\net5.0\DbConfig.txt

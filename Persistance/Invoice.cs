@@ -3,16 +3,17 @@ using System.Collections.Generic;
 
 namespace Persistance
 {
-    public static class OrderStatus
+    public static class InvoiceStatus
     {
-        public const int CREATE_NEW_ORDER = 1;
+        public const int CREATE_NEW_INVOICE= 1;
         public const int ORDER_INPROGRESS = 2;
     }
-    public class Order
+    public class Invoice
     {
-        public int OrderId { set; get; }
+        public int InvoiceID { set; get; }
         public DateTime OrderDate { set; get; }
         public Customer OrderCustomer { set; get; }
+        public User OrderUser{set; get;}
         public int? Status {set;get;}
         public List<Cat> CatList { set; get; }
 
@@ -30,20 +31,22 @@ namespace Persistance
             }
         }
 
-        public Order()
+        public Invoice()
         {
             CatList = new List<Cat>();
+            OrderCustomer = new Customer();
+            OrderDate = DateTime.Now;
         }
 
         public override bool Equals(object obj){
-            if(obj is Order){
-                return ((Order)obj).OrderId.Equals(OrderId);
+            if(obj is Invoice){
+                return ((Invoice)obj).InvoiceID.Equals(InvoiceID);
             }
             return false;
         }
 
         public override int GetHashCode(){
-            return OrderId.GetHashCode();
+            return InvoiceID.GetHashCode();
         }
     }
 }

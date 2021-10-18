@@ -14,7 +14,7 @@ namespace Persistance
         public decimal CatPrice { set; get; }
         public string CatAge { set; get; }
         public string CatColor { set; get; }
-        public int CatWeight { set; get; }
+        public string CatWeight { set; get; }
         public string CatLongevety { set; get; }
         public int CatQuantity { set; get; }
 

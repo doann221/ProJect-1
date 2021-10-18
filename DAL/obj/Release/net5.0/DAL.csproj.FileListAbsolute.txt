@@ -28,3 +28,4 @@ D:\Temp\Projectsem-1\ProJect-1\DAl\obj\Release\net5.0\DAL.csproj.CopyComplete
 D:\Temp\Projectsem-1\ProJect-1\DAl\obj\Release\net5.0\DAL.dll
 D:\Temp\Projectsem-1\ProJect-1\DAl\obj\Release\net5.0\ref\DAL.dll
 D:\Temp\Projectsem-1\ProJect-1\DAl\obj\Release\net5.0\DAL.pdb
+D:\Temp\Projectsem-1\ProJect-1\DAl\bin\Release\net5.0\DbConfig.txt

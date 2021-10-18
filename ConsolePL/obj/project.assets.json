@@ -877,8 +877,8 @@
     },
     "DAL/1.0.0": {
       "type": "project",
-      "path": "../DAl/DAL.csproj",
-      "msbuildProject": "../DAl/DAL.csproj"
+      "path": "../DAL/DAL.csproj",
+      "msbuildProject": "../DAL/DAL.csproj"
     },
     "Persistance/1.0.0": {
       "type": "project",

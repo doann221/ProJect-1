@@ -124,3 +124,4 @@ D:\Temp\Projectsem-1\ProJect-1\ConsolePL\obj\Debug\net5.0\ConsolePL.dll
 D:\Temp\Projectsem-1\ProJect-1\ConsolePL\obj\Debug\net5.0\ref\ConsolePL.dll
 D:\Temp\Projectsem-1\ProJect-1\ConsolePL\obj\Debug\net5.0\ConsolePL.pdb
 D:\Temp\Projectsem-1\ProJect-1\ConsolePL\obj\Debug\net5.0\ConsolePL.genruntimeconfig.cache
+D:\Temp\Projectsem-1\ProJect-1\ConsolePL\bin\Debug\net5.0\DbConfig.txt

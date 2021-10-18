@@ -5,8 +5,9 @@ using DAL;
 
 namespace BL
 {
-    public class CatBL{
-       private static CatDAL cdal = new CatDAL();
+    public class CatBL
+    {
+        private static CatDAL cdal = new CatDAL();
         public static Cat GetCatByID(int catId)
         {
             return cdal.GetCatByID(catId);
@@ -17,7 +18,7 @@ namespace BL
         }
         public List<Cat> GetByName(string catName)
         {
-            return cdal.GetCatByName(CatFilter.FILTER_BY_ITEM_NAME, new Cat{CatName=catName});
+            return cdal.GetCatByName(CatFilter.FILTER_BY_ITEM_NAME, new Cat { CatName = catName });
         }
     }
 }
